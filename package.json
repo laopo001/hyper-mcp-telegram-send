@@ -1,0 +1,29 @@
+{
+  "name": "hyper-mcp-telegram-send",
+  "version": "0.1.0",
+  "description": "A Model Context Protocol server",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "hyper-mcp-telegram-send": "./build/index.mjs"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "tsc": "tsc",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.5.0",
+    "@types/node-telegram-bot-api": "^0.64.7",
+    "dotenv": "^16.4.7",
+    "node-fetch-native": "^1.6.4",
+    "node-telegram-bot-api": "^0.66.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  }
+}
